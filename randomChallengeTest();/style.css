@@ -1,0 +1,52 @@
+*{
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.col-lg-9, .col-lg-3{
+    display: flex;
+    align-items: center; /* vertically center */
+    justify-content: center; /* horizontally center */
+    flex-direction: column;
+}
+#myRow{
+    height: 600px;
+}
+.enteredNumberInput{
+    width: 550px;  
+}
+
+@media only screen and (max-width: 440px) {
+    .enteredNumberInput{
+        width: 350px;   
+    }
+    #br{
+        margin-top: 30px;
+    }
+    
+}
+/* Radio Button part */
+/* Arithmetic Operations Part */
+.addition{
+    width: 90px;
+    height: 90px;
+    background-color: red;
+}
+.subtraction{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(20, 8, 253);
+}
+.multiplication{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(10, 232, 158);
+}
+.division{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(203, 0, 253);
+}
+@media only screen and (max-width: 440px){
+    
+}
