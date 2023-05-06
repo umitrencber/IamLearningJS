@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCİSSORS</title>
+    <style>
+        body{
+            background-color: #2E86C1;
+            margin: 50px 10px ;
+        }
+        #myGame{
+            width: 700px;
+            height: 600px;
+            border: 3px solid black;
+            margin-left: 350px;
+            float:left;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 30px;
+
+        }
+        #rockBox,#paperBox,#scissorsBox,#randomTool,#selectedTool{
+            display: inline-block;
+            border: 1px solid yellow;
+            margin-left: 60px;
+        }
+       #randomTool,#selectedTool{
+        border: 10px solid yellow;
+        margin-top: 40px;
+
+       }
+       #clearfix{
+        clear: both;
+       }
+       #vs{
+        display: inline-block;
+        font-size: 100px;
+        margin-left: 50px;
+       }
+       #true,#false{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-left: 60px;
+        background-color: greenyellow;
+
+       }
+
+    </style>
+</head>
+<body>
+
+    <div id="myGame">
+        <h2>ROCK-PAPER-SCİSSORS</h2>
+        <div id="tools">
+            <div id="rockBox">
+                <img id="rock" src="img/tas.png" width="150px" height="150px" alt="">
+            </div>
+            <div id="paperBox">
+                <img id="paper" src="img/kagit.png" width="150px" height="150px" alt="">
+            </div>
+            <div id="scissorsBox">
+                <img id="scissors" src="img/makas.png" width="150px" height="150px"  alt="">
+            </div>
+        </div>
+
+            <div id="randomTool">
+                <img id="randomImg" src="" width="150px" height="150px" alt="">
+            </div>
+            <div id="vs">VS</div>
+            <div id="selectedTool">
+                <img src="" width="150px" height="150px" alt="">
+            </div>
+            <br>
+
+         <div style="text-align: center; margin-top: 50px;">
+            <button id="startBtn"
+            onclick="startGame();" style="font-size: 30px;"> Start Game</button>
+         </div>
+    </div>
+
+    <div id="score" style="float: left;">
+        <div id="true">0</div>
+        <div id="false">0</div>
+    </div>
+
+    <script src="rockPaper.js"></script>
+
+
+<script>
+    // Oyun başlatma fonksiyonu
+    function startGame(){
+        randomPicture();
+    }
+</script>
+</html>
