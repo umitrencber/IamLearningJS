@@ -14,9 +14,13 @@
             width: 700px;
             height: 600px;
             border: 3px solid black;
-            margin-left: 350px;
-            float:left;
+            margin-left: 300px;
+
         }
+        #myGame,#score{
+            float: left;
+        }
+
         h2{
             text-align: center;
             margin-bottom: 30px;
@@ -32,9 +36,7 @@
         margin-top: 40px;
 
        }
-       #clearfix{
-        clear: both;
-       }
+
        #vs{
         display: inline-block;
         font-size: 100px;
@@ -52,6 +54,8 @@
     </style>
 </head>
 <body>
+
+
 
     <div id="myGame">
         <h2>ROCK-PAPER-SCİSSORS</h2>
@@ -72,28 +76,32 @@
             </div>
             <div id="vs">VS</div>
             <div id="selectedTool">
-                <img src="" width="150px" height="150px" alt="">
+                <img id="selectedImg" src="" width="150px" height="150px" alt="">
             </div>
             <br>
 
          <div style="text-align: center; margin-top: 50px;">
             <button id="startBtn"
-            onclick="startGame();" style="font-size: 30px;"> Start Game</button>
+             style="font-size: 30px;"> Start Game</button>
          </div>
     </div>
 
-    <div id="score" style="float: left;">
+    <div id="score" >
         <div id="true">0</div>
         <div id="false">0</div>
     </div>
+<br>
+    <div class="messagePart">
+        <p id="message">Merhaba</p>
+    </div>
+
+
+        <h4>Düzeltmem veya eklemem gereken özellikler</h4>
+            <li>Start Game butonuna basınca geri sayım başlamalı</li>
+            <li>her resim atamasından sonra aynı resmi atamıyacak bir algoritma yazılmalo</li>
+
+
 
     <script src="rockPaper.js"></script>
 
-
-<script>
-    // Oyun başlatma fonksiyonu
-    function startGame(){
-        randomPicture();
-    }
-</script>
 </html>
