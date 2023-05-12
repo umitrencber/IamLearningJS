@@ -28,8 +28,14 @@ function todayBtn(){
     todays.appendChild(today1Label);
     todays.appendChild(document.createElement("br"));
 
-
-
+}
+today1.onclick == function(){
+    if(today1.value == true){
+        today1Label.style.textDecoration = "line-through";
+    }
+    else{
+        today1Label.style.textDecoration = "none";
+    }
 }
 function tommorrowBtn(){
     switch(""){
@@ -57,3 +63,4 @@ function nextWeekBtn(){
         default : alert("wromg");
     }
 }
+
